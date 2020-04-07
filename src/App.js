@@ -1,7 +1,16 @@
 import React from 'react';
+import {
+  CssBaseline,
+  ThemeProvider
+} from '@material-ui/core';
+
+import theme from './theme';
 
 export default function App() {
   return(
-    <h1>Pricing</h1>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <h1>Pricing</h1>
+    </ThemeProvider>
   );
 }
