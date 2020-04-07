@@ -5,12 +5,13 @@ import {
 } from '@material-ui/core';
 
 import theme from './theme';
+import Header from './components/Header';
 
 export default function App() {
   return(
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <h1>Pricing</h1>
+      <Header />
     </ThemeProvider>
   );
 }
