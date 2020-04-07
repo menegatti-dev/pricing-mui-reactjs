@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import theme from './theme';
 import Header from './components/Header';
+import Main from './pages/Main';
 import Footer from './components/Footer';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,6 +26,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header />
+      <Main />
       <Footer />
     </ThemeProvider>
   );
